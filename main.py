@@ -1,7 +1,6 @@
-dark=input("Выхотите спать?(да, нет, Не знаю)")
-if dark== "да":
-    print("Идите спать")
-elif dark=="Не знаю":
-    print('Подумайте еще')
-else:
-    print('Идите гулять')
+a=(int(input("Введите число ")))
+if a>0:
+           print("Положительное число")
+elif a<0:
+           print(1)
+else: print(-1)
