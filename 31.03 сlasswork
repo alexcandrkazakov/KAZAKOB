@@ -1,0 +1,27 @@
+a=float(input(" первое число "))
+b=float(input(" второе число "))
+с=float(input("Сумма "))
+if a+b==с:
+    print("молодец")
+elif a+b!=с:
+    print("неверно") 
+    print(a+b)
+    
+a=int(input("пробег"))
+b=int(input("день "))
+x=a%10
+x1=a//10 %10
+x2=a//100 %10
+if (x+x1+x2)>b:
+    b*0
+    print("сброс")
+else: print(" Сегодня не сломался  " +str(a))
+    a=int(input(" часы"))
+b=int(input("остаток по кредиту "))
+c=int(input(" деньги на еду"))
+m=((200*a)/2**3)+a
+if m>=(b+c):
+    print("Часов хватает. Можно отдохнуть")
+elif    m<(b+c):
+    print("Часов не хватает. Придется работать")
+    
