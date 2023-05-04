@@ -1,0 +1,16 @@
+from random import randint 
+x=randint(0,100)
+i=1
+print(x)
+a=int(input("угадай число "))
+if 0<a<100:
+    while a!=x:
+        a=int(input("побробуй еще "))
+        i=i+1
+        if (0>a) or (a>100):
+             print("Введи число от 0 до 100") 
+if a==x:
+    print("ты угадал \nколичество  попыток",str(i) )
+        
+else: print("ведди число от 0 до 100")         
+        
