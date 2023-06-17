@@ -1,0 +1,33 @@
+ return 2**s.count("1")-1
+ 
+  new_n = str(n)
+    total = 0
+    for i in new_n:
+        total += pow(int(i), p)
+        p += 1
+    if total % n == 0:
+        return total //n
+    else:
+        return -1
+      
+      def sort_array(arr):
+  odds = sorted((x for x in arr if x%2 != 0), reverse=True)
+  return [x if x%2==0 else odds.pop() for x in arr]
+  
+  def is_pangram(s):
+    s = s.lower()
+    for i in 'abcdefghijklmnopqrstuvwxyz':
+        if i  not in s:
+            return False
+    return True
+    
+    def find_uniq(arr):
+    x=list(set(arr))
+    a=x[0]
+    b=x[1]
+    if arr.count(a)>arr.count(b):
+        return(b)
+    elif arr.count(a)<arr.count(b):
+        return(a)
+    
+    
